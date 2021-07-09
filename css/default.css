@@ -1842,7 +1842,7 @@ fieldset:disabled a.btn {
     background-color: #B68FE9;
     border-color: #B68FE09; }
   .btn-primary:focus, .btn-primary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(29, 233, 182, 0.5); }
+    box-shadow: 0 0 0 0.2rem #B68FE0; }
   .btn-primary.disabled, .btn-primary:disabled {
     color: #11171a;
     background-color: #B68FE0;
@@ -1854,7 +1854,7 @@ fieldset:disabled a.btn {
     border-color: #12b58c; }
     .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-primary.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(29, 233, 182, 0.5); }
+      box-shadow: 0 0 0 0.2rem #B68FE0; }
 
 .btn-secondary {
   color: #11171a;
@@ -2027,7 +2027,7 @@ fieldset:disabled a.btn {
     background-color: #B68FE0;
     border-color: #B68FE0; }
   .btn-outline-primary:focus, .btn-outline-primary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(29, 233, 182, 0.5); }
+    box-shadow: 0 0 0 0.2rem #B68FE0; }
   .btn-outline-primary.disabled, .btn-outline-primary:disabled {
     color: #B68FE0;
     background-color: transparent; }
@@ -2038,7 +2038,7 @@ fieldset:disabled a.btn {
     border-color: #B68FE0; }
     .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-primary.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(29, 233, 182, 0.5); }
+      box-shadow: 0 0 0 0.2rem #B68FE0; }
 
 .btn-outline-secondary {
   color: #ffffff;
@@ -2728,10 +2728,10 @@ input[type="button"].btn-block {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Cpath stroke='%23ffffff' d='M0 2h4'/%3E%3C/svg%3E"); }
 
 .custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before {
-  background-color: rgba(29, 233, 182, 0.5); }
+  background-color: #B68FE0; }
 
 .custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before {
-  background-color: rgba(29, 233, 182, 0.5); }
+  background-color: #B68FE0; }
 
 .custom-radio .custom-control-label::before {
   border-radius: 50%; }
@@ -2743,7 +2743,7 @@ input[type="button"].btn-block {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23ffffff'/%3E%3C/svg%3E"); }
 
 .custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before {
-  background-color: rgba(29, 233, 182, 0.5); }
+  background-color: #B68FE0; }
 
 .custom-select {
   display: inline-block;
@@ -3236,7 +3236,7 @@ input[type="button"].btn-block {
 .navbar-light .navbar-nav .nav-link {
   color: rgba(0, 0, 0, 0.7); }
   .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-    color: rgba(29, 233, 182, 0.9); }
+    color: #B68FE0; }
   .navbar-light .navbar-nav .nav-link.disabled {
     color: rgba(0, 0, 0, 0.3); }
 
@@ -7545,7 +7545,7 @@ body {
     display: block;
     height: 1px;
     background: #263238;
-    background: linear-gradient(to right, rgba(29, 233, 182, 0.1) 0, #263238 50%, rgba(29, 233, 182, 0.1) 100%); }
+    background: linear-gradient(to right, #B68FE0 0, #263238 50%, #B68FE0 100%); }
   .divider.bottom-divider:after {
     content: '';
     position: absolute;
@@ -7555,7 +7555,7 @@ body {
     display: block;
     height: 1px;
     background: #263238;
-    background: linear-gradient(to right, rgba(29, 233, 182, 0.24) 0, #263238 50%, rgba(29, 233, 182, 0.24) 100%); }
+    background: linear-gradient(to right, #B68FE0 0, #263238 50%, #B68FE0 100%); }
 
 /*vertical heights */
 .vh-100 {
@@ -7645,7 +7645,7 @@ body {
     color: #B68FE0 !important; }
 
 .slick-next:before, .slick-prev:before {
-  color: rgba(29, 233, 182, 0.2); }
+  color: #B68FE0; }
 
 .slick-next:hover:before, .slick-prev:hover:before {
   color: #B68FE0; }
@@ -7707,7 +7707,7 @@ footer h5 {
   line-height: 40px;
   right: -100px;
   color: #ffffff;
-  background-color: rgba(29, 233, 182, 0.5); }
+  background-color: #B68FE0; }
   .scroll-top:hover {
     background-color: #B68FE0;
     transition: all .4s ease-in-out; }
@@ -7724,7 +7724,7 @@ footer h5 {
   margin: 1rem; }
   .icon-box.box-primary {
     color: #B68FE0;
-    background-color: rgba(29, 233, 182, 0.1); }
+    background-color: #B68FE0; }
   .icon-box.box-secondary {
     color: #ffffff;
     background-color: rgba(255, 255, 255, 0.1); }
@@ -7835,7 +7835,7 @@ footer h5 {
     top: 0;
     font-size: 20px;
     text-align: center;
-    color: rgba(29, 233, 182, 0.5);
+    color: #B68FE0;
     cursor: pointer;
     display: -ms-flexbox;
     display: flex;
