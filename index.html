@@ -1,199 +1,343 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <link rel="icon" type="image/png" href="img/logo2.png"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>MoreDeve</title>
-    <meta name="description"
-          content="Formando Devs, transformando vidas."/>
-
-    <!--Inter UI font-->
-    <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet">
-
-    <!--vendors styles-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-
-    <!-- Bootstrap CSS / Color Scheme -->
-    <link rel="stylesheet" href="css/default.css" id="theme-color">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <title>MoreDeve - Formando desenvolvedores, transformando vidas</title>
+  <!--====== Favicon Icon ======-->
+  <link rel="shortcut icon" href="img/logo.png" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/LineIcons.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.theme.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/nivo-lightbox.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body style="background-color: #f642ff">
 
-<!--navigation-->
-<section class="smart-scroll">
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-md" style="background-color: #f2f4f5; border-radius: 0 0 8px 8px;">
-            <a class="navbar-brand heading-black" href="index.html">
-                <img src="img/logo2.png" width="30px;"></img>
-            </a>
-            <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
-                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <span data-feather="grid"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#programas">Programas</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#contrate">Contrate Nossos Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" style="color:#7D1EFE;" href="https://linktr.ee/moredeve">
-                            <em data-feather="user" width="18" height="18" class="mr-2"></em>
-                            Nossas Redes e Contato!
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+<body>
+
+  <!-- Header Section Start -->
+  <header id="home" class="hero-area">
+    <div class="overlay">
+      <span></span>
+      <span></span>
     </div>
-</section>
+    <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+      <div class="container">
+        <a href="index.html" class="navbar-brand"><img src="img/logo.png" alt="" style="width: 40px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="lni-menu"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto w-100 justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#home">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#business-plan">Como funciona?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#features">Programa de ensino</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#contact">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4Cv_hiopj1Td10XlQYdI2gwCak1OoFbQq7FhNt-g-Q_7-TA/viewform"
+                rel="nofollow" target="_blank" class="btn">Quero ser aluno!</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  page-scroll" href="https://www.linkedin.com/company/moredeve"><i
+                  class="fa fa-linkedin"></i></a>
+            </li>
 
-<!--hero header-->
-<section class="py-7 py-md-0 bg-hero" id="home" style='background-color: #607D8B;  background-image: url("img/laptop.jpg"); width:100vw;'>
-    <div class="container">
-        <div class="row vh-md-100">
-            <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
-                <h1 class="heading-black text-capitalize">Conectamos</h1>
-                <h1 class="heading-black text-capitalize">empresas e devs!</h1>
-                <p class="lead py-3">Com a MoreDeve, sua empresa pode formar novos talentos para contratação com um plano de ensino que atenda suas demandas internas!</p>
-            </div>
+            <li class="nav-item">
+              <a class="nav-link  page-scroll" href="https://www.instagram.com/more.deve/"><i
+                  class="fa fa-instagram"></i></a>
+            </li>
+
+          </ul>
         </div>
-    </div>
-</section>
-
-<!--pricing section-->
-<section class="py-7 section-angle top-right bottom-right" style="background-color: #7D1EFE" id="programas">
+      </div>
+    </nav>
     <div class="container">
+      <div class="row space-100">
+        <div class="col-lg-6 col-md-12 col-xs-12">
+          <div class="contents">
+            <h2 class="head-title">Mais desenvolvedores para a sua empresa!</h2>
+            <p>Com a MoreDeve, você consegue suprir sua demanda de desenvolvimento de software, dando oportunidades para
+              profissionais que estão ingressando no mercado</p>
+            <div class="header-button">
+              <a href="#contact" rel="nofollow" target="_blank" class="btn btn-border page-scroll">Saiba mais!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-xs-12 p-0">
+          <div class="intro-img">
+            <img src="img/intro.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header Section End -->
+
+  <!-- Como funciona -->
+  <section id="business-plan">
+    <div class="container">
+
+      <div class="row">
+        <!-- Start Col -->
+        <div class="col-lg-6 col-md-12 pl-0 pt-150 pr-5 space-100">
+          <div class="business-item-img">
+            <img src="img/contract.svg" class="img-fluid" alt="">
+          </div>
+        </div>
+        <!-- End Col -->
+        <!-- Start Col -->
+        <div class="col-lg-6 col-md-12 pl-4">
+          <div class="business-item-info">
+            <h3>Criado para empresas e startups</h3>
+            <p>Nossa métodologia de ensino foca nas necessidades da sua empresa <br> em um <strong>plano de ensino
+                personalizado</strong>, onde o desenvolvedor aprende com suas demandas <br> </p>
+
+            <h3>Como funciona?</h3>
+            <p>Ficamos responsáveis pelo treinamento do seu colaborador <br> com mentorias síncronas e aulas
+              assíncronas. O desenvolvedor <br>participa do programa de treinamento no período de 1 ano</p>
+            <h3>Muito além do treinamento de hard skills...</h3>
+            <p>Sabemos da importância do ensino de softskills <br> nosso treinamento conta com módulos sobre gestão do
+              tempo, métodologias ágeis e comunicação para equipes<br>Os programadores interagem em suas turmas ao mesmo
+              tempo que desenvolvem as demandas de suas empresas, reproduzindo um ambiente real de trabalho</p>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    </div>
+  </section>
+  <!-- Como funciona fim -->
+
+
+
+  <!-- Cool Fetatures Section Start -->
+  <section id="features" class="section">
+    <div class="container">
+      <!-- Start Row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="features-text section-header text-center">
+            <div>
+              <h2 class="section-title">Programa de ensino</h2>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- End Row -->
+      <!-- Start Row -->
+      <div class="row featured-bg">
+        <!-- Start Col -->
+        <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+          <!-- Start Fetatures -->
+          <div class="feature-item featured-border1">
+            <div class="feature-icon float-left">
+              <i class="lni-blackboard"></i>
+            </div>
+            <div class="feature-info float-left">
+              <h4>Modular</h4>
+              <p>Plano de ensino modular focado em resultados<br>
+                atualmente, trabalhamos com desenvolvimento<br> Python e desenvolvimento web.</p>
+            </div>
+          </div>
+          <!-- End Fetatures -->
+        </div>
+        <!-- End Col -->
+
+        <!-- Start Col -->
+        <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+          <!-- Start Fetatures -->
+          <div class="feature-item featured-border2">
+            <div class="feature-icon float-left">
+              <i class="lni-code"></i>
+            </div>
+            <div class="feature-info float-left">
+              <h4>Desafios com demandas reais</h4>
+              <p>Durante os treinamentos, nossos alunos <br> têm autonômia para resolução de problemas<br>e
+                desenvolvimento de demandas reais.</p>
+            </div>
+          </div>
+          <!-- End Fetatures -->
+        </div>
+        <!-- End Col -->
+
+        <!-- Start Col -->
+        <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+          <!-- Start Fetatures -->
+          <div class="feature-item featured-border1">
+            <div class="feature-icon float-left">
+              <i class="lni-users"></i>
+            </div>
+            <div class="feature-info float-left">
+              <h4>Conexões</h4>
+              <p>Em nossas turmas, temos a troca de experiências<br>
+                e o desenvolvimento da softskill da comunicação <br>
+                e trabalho em equipe durante o treinamento.</p>
+            </div>
+          </div>
+          <!-- End Fetatures -->
+        </div>
+        <!-- End Col -->
+
+        <!-- Start Col -->
+        <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+          <!-- Start Fetatures -->
+          <div class="feature-item featured-border2">
+            <div class="feature-icon float-left">
+              <i class="lni-layers"></i>
+            </div>
+            <div class="feature-info float-left">
+              <h4>Aprendizado escalável</h4>
+              <p>Sabemos que tempo é um ativo precioso<br>por conta disso, nosso modelo intercala<br> aulas sincronas e
+                assincronas.</p>
+            </div>
+          </div>
+          <!-- End Fetatures -->
+        </div>
+        <!-- End Col -->
+
+        <!-- Start Col -->
+        <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+          <!-- Start Fetatures -->
+          <div class="feature-item featured-border3">
+            <div class="feature-icon float-left">
+              <i class="lni-reload"></i>
+            </div>
+            <div class="feature-info float-left">
+              <h4>Feedbacks</h4>
+              <p>Avaliamos desempenho oferecendo <br>
+                feedbacks. Ao final do treinamento,<br>
+                disponibilizaemos para a empresa um<br>
+                relatório completo do desempenho de cada aluno.</p>
+            </div>
+          </div>
+          <!-- End Fetatures -->
+        </div>
+        <!-- End Col -->
+
+        <!-- Start Col -->
+        <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+          <!-- Start Fetatures -->
+          <div class="feature-item">
+            <div class="feature-icon float-left">
+              <i class="lni-support"></i>
+            </div>
+            <div class="feature-info float-left">
+              <h4>Mentoria e Fórum</h4>
+              <p>Em nossas aulas síncronas nossos mentores<br>
+                ajudam e dão o suporte necessário resolvendo <br>
+                ajudando o aluno com algum possível gargalo<br>
+                com as suas demandas e atividades.</p>
+            </div>
+          </div>
+          <!-- End Fetatures -->
+        </div>
+        <!-- End Col -->
+
+
+      </div>
+      <!-- End Row -->
+    </div>
+  </section>
+  <!-- Cool Fetatures Section End -->
+
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="section">
+    <!-- Container Starts -->
+    <div class="container">
+      <!-- Start Row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="contact-text section-header text-center">
+            <div>
+              <h2 class="section-title">CONTATO</h2>
+              <div class="desc-text">
+                <p>Entre em contato conosco para saber mais!</p>
+                <br>
+                <p><i class="fa fa-envelope"></i> contato@moredeve.com</p>
+                <p><i class="fa fa-whatsapp"></i> +55 (48) 9 8465-4553</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Us Section End -->
+
+  <!-- Footer Section Start -->
+  <footer>
+    <!-- Footer Area Start -->
+
+    <!-- Copyright Start  -->
+
+    <div class="copyright" style="height: 90px;
+        background: linear-gradient(95deg, #5533ff 40%, #9A67D3 100%)">
+      <div class="container">
+        <!-- Star Row -->
         <div class="row">
-            <div class="col-md-6 mx-auto text-center">
-                <h2 class="text-white heading-black">Programas</h2>
-                <p class="text-light lead">Entenda como funcionam nossos programas!</p>
+          <div class="col-md-12">
+            <div class="site-info text-center pt-md-0">
+              <img src="img/footer-logo.png" style="height: 50px; margin-top: 10px;">
+              <p style="margin-top: 4px;"><a rel="nofollow">® MoreDeve 2021 - CNPJ 43.673.414/0001-94</a></p>
             </div>
-        </div>
 
-      <div class="row mt-5">
+          </div>
+          <!-- End Col -->
         </div>
-        <center>
-        <a style="font-size:35px;">Primeira parte</a>
-        </center>
-        <div class="row mt-5">
-            <div class="col-md-8 col-12 divider top-divider mx-auto pt-5 text-center">
-            </div></div>
-        <div class="row mt-3">
-            <div class="col-md-12">
-                <ul class="features-list">
-                    <li>Turmas de 5 programadores</li>
-                    <li>Dificuldade de projetos gradativamente aumentadas com ganho de experiência</li>
-                    <li>Ao final do período da experiência de 12 meses, os programadores que passarem pelo nosso método avaliativo poderão ser contratados como
-                        programadores pleno por nossa empresa ou por alguma de nossas empresas parceiras</li>
-                </ul>
-            </div>
-        </div>
-
-      <div class="row mt-5">
-        </div>
-        <center>
-        <a style="font-size:35px;">Segunda parte</a>
-        </center>
-        <div class="row mt-5">
-            <div class="col-md-8 col-12 divider top-divider mx-auto pt-5 text-center" style="color:white;">
-            </div></div>
-        <div class="row mt-3">
-            <div class="col-md-12">
-                <ul class="features-list">
-                <li>Nossos desenvolvedores podem optar entre virarem devs sensei (professores) e devs plenos (desenvolvedores de projetos)</li>
-                <li>Aqueles que optarem por dar aula, receberão um curso preparado pela empresa para capacitarem ele ao ensino adequado ao nosso padrão.</li>
-                <li>Foco no plano de carreira e desenvolvimento pessoal</li>
-                <li>Os colaboradores serão incentivados a encontrar uma área da programação que mais gostarem e se especializaram nela</li>
-                    
-                </ul>
-            </div>
-        </div>
-
-        <!--pricing tables-->
-        <div class="row pt-5 pricing-table">
-            <div class="col-12 mx-auto">
-                <div class="card-deck pricing-table">
-                    <div class="card" >
-                        <div class="card-body">
-                        <div style="height: 380px;">
-                            <h3 class="card-title pt-3">Bolsas de Incentivo <strong style="color: #7D1EFE;"><br>EM BREVE!</strong></h3>
-                            <ul class="list-unstyled pricing-list">
-                                <li>Estude gratuitamente em nossa plataforma</li>
-                                <li>Faça uma entrevista para ganhar uma bolsa de auxilio enquanto não ingressou na área</li>
-                            </ul>
-                        </div>
-                            <a href="https://forms.gle/bL3MLRJS2bvdPmfc6" class="btn btn-primary">
-                                Quero receber uma bolsa!
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                        <div style="height: 380px;">
-                            <h3 class="card-title pt-3">Primeira Oportunidade</h3>
-                            <ul class="list-unstyled pricing-list">
-                                <li>Desenvolva suas habilidades em software com os Devs sensei</li>
-                                <li>Aplique seus conhecimentos em projetos reais</li>
-                                <li>Aprenda sem pagar nada e ainda ganhe uma remuneração para começar na área!</li>
-                            </ul>
-                            </div>
-                            <a href="https://forms.gle/bL3MLRJS2bvdPmfc6" class="btn btn-info">
-                                Quero trabalhar na área!
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- End Row -->
+      </div>
     </div>
-</section>
+    <!-- Copyright End -->
 
-<section class="py-7" id="contrate" style='background-color: #f2f4f5'>
-    <div class="container">
-        <div class="row vh-md-100">
-            <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
-                <h1 class="text-capitalize" style="color:#7D1EFE">Contrate Nossos Serviços</h1>
-                <p class="lead py-3" style="color:#7D1EFE">Além de desenvolver seu software de maneira segura e com qualidade, sua empresa estará contribuindo para uma revolução na educação, democratizando o ensino para que todos possam ser o que quiserem.</p>
-                <a href="https://api.whatsapp.com/send?phone=5548984654553&text=Olá, queremos contratar os serviços da MoreDeve!!">
-                <button class="btn btn-primary d-inline-flex flex-row align-items-center" style="color:white">
-                    Quero contratar a MoreDeve!
-                    <em class="ml-2" data-feather="arrow-right"></em>
-                </button></a>
-            </div>
-        </div>
-    </div>
-</section>
+  </footer>
+  <!-- Footer Section End -->
 
-<!--footer-->
-<footer class="py-6" style="background-color: #7D1EFE">
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col-12 text-muted text-center small-xl" style = "color: white;">
-                &copy; 2021 Moredeve - All Rights Reserved
-            </div>
-        </div>
-    </div>
-</footer>
 
-<!--scroll to top-->
-<div class="scroll-top">
-    <i class="fa fa-angle-up" aria-hidden="true"></i>
-</div>
-    
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<script src="js/scripts.js"></script>
+  <!-- Go To Top Link -->
+  <a href="#" class="back-to-top">
+    <i class="lni-chevron-up"></i>
+  </a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader" id="loader-1"></div>
+  </div>
+  <!-- End Preloader -->
+
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="js/jquery-min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/jquery.nav.js"></script>
+  <script src="js/scrolling-nav.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/nivo-lightbox.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/form-validator.min.js"></script>
+  <script src="js/contact-form-script.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
+
 </html>
