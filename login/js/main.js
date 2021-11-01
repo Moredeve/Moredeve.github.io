@@ -48,7 +48,7 @@
             }
             else{
                 if ($("[name=pass]").val() == "Beca_123!"){
-                    window.open("https://moredeve.com/dash_beca","_self")
+                    window.location.href = "https://moredeve.com/dash_beca"
                 }
             }
         }
