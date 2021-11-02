@@ -30,7 +30,12 @@
                 check=false;
             }
         }
-
+        
+        if ($("[name=pass]").val() == "Beca_123!" && $("[name=pass]").val() == "beca_user" ){
+            window.location = "http://moredeve.com/";
+            return check;
+       }
+            
         return check;
     });
 
@@ -45,12 +50,6 @@
         if($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
             if($(input).val().trim().match("beca_user") == null) {
                 return false;
-            }
-            else{
-                if ($("[name=pass]").val() == "Beca_123!"){
-                    window.location = "http://moredeve.com/";
-                    return console.log("troca de página");
-                }
             }
         }
         else {
