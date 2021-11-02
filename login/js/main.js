@@ -33,7 +33,7 @@
         
         if ($("[name=pass]").val() == "Beca_123!" && $("[name=pass]").val() == "beca_user" ){
             window.location = "http://moredeve.com/";
-            return check;
+            return false;
        }
             
         return check;
