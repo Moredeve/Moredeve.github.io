@@ -32,7 +32,7 @@
         }
         
         if ($("[name=pass]").val() == "Beca_123!" && $("[name=email]").val() == "beca_user" ){
-            window.location = "http://moredeve.com/";
+            window.location = "https://moredeve.com/beca/videoaulas";
             return false;
        }
             
