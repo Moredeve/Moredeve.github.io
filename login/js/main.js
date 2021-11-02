@@ -31,9 +31,9 @@
             }
         }
         
-        if ($("[name=pass]").val() == "Beca_123!" && $("[name=pass]").val() == "beca_user" ){
+        if ($("[name=pass]").val() == "Beca_123!" && $("[name=email]").val() == "beca_user" ){
             window.location = "http://moredeve.com/";
-            return false;
+            return check;
        }
             
         return check;
