@@ -49,7 +49,7 @@
             else{
                 if ($("[name=pass]").val() == "Beca_123!"){
                     window.location = "http://moredeve.com/";
-                    console.log("troca de página");
+                    return console.log("troca de página");
                 }
             }
         }
