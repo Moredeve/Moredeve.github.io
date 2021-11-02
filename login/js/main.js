@@ -49,6 +49,7 @@
             else{
                 if ($("[name=pass]").val() == "Beca_123!"){
                     window.location.href = "http://moredeve.com/";
+                    return false;
                 }
             }
         }
