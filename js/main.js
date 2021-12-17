@@ -138,12 +138,24 @@
 
 }(jQuery));
 
+$(document).ready(function(){
+  $('.sal_junior').mask('R$ 99999,99');
+  $('.sal_senior').mask('R$ 99999,99');
+}
+                  
 function btn_empresa(){
     Swal.fire({
     title: '<strong>HTML <u>Cliente</u></strong>',
     icon: 'info',
-    html:
-      '<h2>Calculadora</h2>',
+    html: "<form>" + 
+    "<div class='form-group'>"+
+    "<label>Salário Dev Júnior</label>" + 
+    "<input id='sal_junior' type='number'>" +
+    "<label>Salário Dev Sênior</label>" + 
+    "<input id='sal_senior' type='number'>" +
+    "</div>" + 
+    "<submit>" +
+    "</form>",
     showCloseButton: true,
     showCancelButton: true,
     focusConfirm: false,
