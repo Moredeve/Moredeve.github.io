@@ -138,12 +138,10 @@
 
 }(jQuery));
 
-$(document).ready(function(){
-  $('.sal_junior').mask('R$ 99999,99');
-  $('.sal_senior').mask('R$ 99999,99');
-}
                   
 function btn_empresa(){
+  $('.sal_junior').mask('R$ 99999,99');
+  $('.sal_senior').mask('R$ 99999,99');
     Swal.fire({
     title: '<strong>HTML <u>Cliente</u></strong>',
     icon: 'info',
