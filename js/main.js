@@ -140,3 +140,23 @@
 
 }(jQuery));  
 
+$('#button').click(function(){
+  var jrs_contratatados = $("#devs_jrs_contratatados").val();
+  var carga_junior = $("#carga_junior").val();
+  var salario_junior = $("#salario_junior").val();
+  var qnt_dev_sr = $("#qnt_dev_sr").val();
+  var carga_senior = $("#carga_senior").val();
+  var salario_senior = $("#salario_senior").val();
+
+  console.log(qnt_dev_sr)
+  console.log(jrs_contratatados)
+
+  $('.area').val(jrs_contratatados + qnt_dev_sr)
+  $('.area').val(carga_junior)
+  $('.area').val(salario_junior)
+  $('.area').val(carga_senior)
+  $('.area').val(salario_senior)
+
+
+});
+
