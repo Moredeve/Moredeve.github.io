@@ -136,53 +136,15 @@
     keyboardNav: true,
   });
 
-}(jQuery));
-
-                  
-function btn_empresa(){
-  $('.sal_junior').mask('R$ 99999,99');
-  $('.sal_senior').mask('R$ 99999,99');
-    Swal.fire({
-    title: '<strong>HTML <u>Cliente</u></strong>',
-    icon: 'info',
-    html: "<form>" + 
-    "<div class='form-group'>"+
-    "<label>Salário Dev Júnior</label>" + 
-    "<input id='sal_junior' type='number'>" +
-    "<label>Salário Dev Sênior</label>" + 
-    "<input id='sal_senior' type='number'>" +
-    "</div>" + 
-    "<submit>" +
-    "</form>",
-    showCloseButton: true,
-    showCancelButton: true,
-    focusConfirm: false,
-    confirmButtonText:
-      '<i class="fa fa-thumbs-up"></i> Great!',
-    confirmButtonAriaLabel: 'Thumbs up, great!',
-    cancelButtonText:
-      '<i class="fa fa-thumbs-down"></i>',
-    cancelButtonAriaLabel: 'Thumbs down'
-  })  
-}
-
-function btn_colaborador(){
-    Swal.fire({
-    title: '<strong>HTML <u>Colaborador</u></strong>',
-    icon: 'info',
-    html:
-      '<h2>Calculadora</h2>',
-    showCloseButton: true,
-    showCancelButton: true,
-    focusConfirm: false,
-    confirmButtonText:
-      '<i class="fa fa-thumbs-up"></i> Great!',
-    confirmButtonAriaLabel: 'Thumbs up, great!',
-    cancelButtonText:
-      '<i class="fa fa-thumbs-down"></i>',
-    cancelButtonAriaLabel: 'Thumbs down'
-  })  
-}
 
 
+}(jQuery));  
 
+
+$(document).ready(function() {
+
+$('.carga_junior').mask('00:00');
+$('.salario_junior').mask('R$ 00000,00');
+$('.carga_senior').mask('00:00');
+$('.salario_senior').mask('R$ 00000,00');
+})
