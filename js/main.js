@@ -140,11 +140,3 @@
 
 }(jQuery));  
 
-
-$(document).ready(function() {
-
-$('.carga_junior').mask('00:00');
-$('.salario_junior').mask('R$ 00000,00');
-$('.carga_senior').mask('00:00');
-$('.salario_senior').mask('R$ 00000,00');
-})
