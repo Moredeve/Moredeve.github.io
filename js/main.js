@@ -140,6 +140,11 @@
 
 }(jQuery));  
 
+
+const round = (num, places) => {
+  return +(parseFloat(num).toFixed(places));
+}
+
 $('#button').click(function(){
   var jrs_contratatados = $("#devs_jrs_contratatados").val();
   var carga_junior = $("#carga_junior").val();
@@ -147,16 +152,37 @@ $('#button').click(function(){
   var qnt_dev_sr = $("#qnt_dev_sr").val();
   var carga_senior = $("#carga_senior").val();
   var salario_senior = $("#salario_senior").val();
+  var carga_senior_total = $("#carga_senior_total").val();
 
-  console.log(qnt_dev_sr)
-  console.log(jrs_contratatados)
+  var senior_time_split = carga_senior.split(':')
 
-  $('.area').val(jrs_contratatados + qnt_dev_sr)
-  $('.area').val(carga_junior)
-  $('.area').val(salario_junior)
-  $('.area').val(carga_senior)
-  $('.area').val(salario_senior)
+  var min_onboarding = (Number(senior_time_split[0]) * 60) + Number(senior_time_split[1])
 
+  carga_senior_total = (Number(carga_senior_total[0]) * 60) + Number(carga_senior_total[1])
+
+  var custo_senior_min = (parseInt(salario_senior.split(' ')[1]) / 20) / carga_senior_total / 60
+  
+  var custo_final_senior = 9 * 20 * min_onboarding * custo_senior_min * qnt_dev_sr
+
+  var custo_final_prod = salario_junior.split(' ')[1] * 0.7 * 8
+
+  var custo_final_bad = (salario_junior.split(' ')[1] * 13 * 0.3) / 4
+
+  console.log("Custo bad: " + custo_final_bad )
+  console.log("Custo prod: " + custo_final_prod  )
+  console.log("Custo senior: " + custo_final_senior  )
+
+
+  var custo_ano = (custo_final_senior + custo_final_bad + custo_final_prod) / 4000
+
+  console.log("custo total: " + custo_ano)
+
+  $('#result').remove();
+  $('.area').append("<p id='result'>" + round(custo_ano,2) + "</p>")
+
+  
+
+  
 
 });
 
