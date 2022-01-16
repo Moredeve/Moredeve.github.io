@@ -153,12 +153,19 @@ $('#button').click(function(){
   var carga_senior = $("#carga_senior").val();
   var salario_senior = $("#salario_senior").val();
   var carga_senior_total = $("#carga_senior_total").val();
+ 
 
+  console.log(carga_senior)
   var senior_time_split = carga_senior.split(':')
 
-  var min_onboarding = (Number(senior_time_split[0]) * 60) + Number(senior_time_split[1])
+  var min_onboarding = ((Number(senior_time_split[0]) * 60) + Number(senior_time_split[1])) / 5
+  
+  console.log(min_onboarding)
 
-  carga_senior_total = (Number(carga_senior_total[0]) * 60) + Number(carga_senior_total[1])
+  carga_senior_total = carga_senior_total.split(':')
+  carga_senior_total = ((Number(carga_senior_total[0]) * 60) + Number(carga_senior_total[1])) / 5
+
+  console.log("c. senior: " + carga_senior_total)
 
   var custo_senior_min = (parseInt(salario_senior.split(' ')[1]) / 20) / carga_senior_total / 60
   
@@ -185,4 +192,3 @@ $('#button').click(function(){
   
 
 });
-
