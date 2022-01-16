@@ -145,30 +145,48 @@ const round = (num, places) => {
   return +(parseFloat(num).toFixed(places));
 }
 
-$('#button').click(function(){
-  var jrs_contratatados = $("#devs_jrs_contratatados").val();
-  var carga_junior = $("#carga_junior").val();
+function calc(){
   var salario_junior = $("#salario_junior").val();
+  console.log(salario_junior)
   var qnt_dev_sr = $("#qnt_dev_sr").val();
+  console.log(qnt_dev_sr)
+  var qnt_dev_jr = $("#qnt_dev_jr").val();
+  console.log(qnt_dev_jr)
   var carga_senior = $("#carga_senior").val();
+  console.log(carga_senior)
   var salario_senior = $("#salario_senior").val();
+  console.log(salario_senior)
   var carga_senior_total = $("#carga_senior_total").val();
+  console.log(carga_senior_total)
  
-  var senior_time_split = carga_senior.split(':')
+  var senior_time_split = carga_senior.split(':');
   var min_onboarding = ((Number(senior_time_split[0]) * 60) + Number(senior_time_split[1])) / 300
 
   carga_senior_total = carga_senior_total.split(':')
   carga_senior_total = ((Number(carga_senior_total[0]) * 60) + Number(carga_senior_total[1])) / 300
 
   var custo_senior_min = (parseInt(salario_senior.split(' ')[1])) / (20 * carga_senior_total * 60)
-  var custo_final_senior = 9 * 20 * (min_onboarding*60) * custo_senior_min * qnt_dev_sr
-  var custo_final_prod = salario_junior.split(' ')[1] * 0.7 * 8
+  var custo_final_senior = 9 * 20 * (min_onboarding*60) * custo_senior_min * parseInt(qnt_dev_sr)
+  var custo_final_prod = salario_junior.split(' ')[1] * 0.7 * 8 * parseInt(qnt_dev_jr);
   var custo_final_bad = (salario_junior.split(' ')[1] * 13 * 0.3) / 4
   var custo_ano = (custo_final_senior + custo_final_bad + custo_final_prod) / 4000
 
   console.log("custo total: " + custo_ano)
 
   $('#result').remove();
-  $('.area').append("<p id='result'>" + round(custo_ano,2) + "</p>")
 
-});
+  var arr = "<h1 id='result'> <strong>" + round(custo_ano,2) + " x </strong></h1>";
+  $('.area').append(arr)
+};
+
+$(".input").on('input', function(){
+  calc();
+})
+
+$( document ).ready(function(){
+  calc();
+})
+
+$(".input").on('click', function(){
+  calc();
+})

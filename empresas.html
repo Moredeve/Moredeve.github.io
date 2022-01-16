@@ -18,8 +18,51 @@
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/responsive.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  
+
 </head>
+
+<style>
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .btn-circle {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 24px;
+    line-height: 1.42;
+    border-radius: 30px;
+  }
+
+  input {
+    font-size: 3vh;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+  }
+
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+    font-size: 3vh;
+  }
+
+  label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-size: 3vh;
+  }
+
+  h1 {
+    font-size:11vh;
+ }
+
+</style>
 
 <body>
   <!-- Header Section Start -->
@@ -59,7 +102,7 @@
       </div>
     </nav>
 
-    
+
     <div class="container">
       <div class="row space-100">
         <div class="col-lg-6 col-md-12 col-xs-12">
@@ -70,9 +113,9 @@
         <div class="col-lg-6 col-md-12 col-xs-12 p-0 pb-30">
           <div class="intro-img">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -92,51 +135,92 @@
               <h2 class="section-title">Simule seu investimento</h2>
             </div>
           </div>
-          <form>
-
-            <div class="row">
-            <div class="col">
-              <img src="img/junior.svg" alt="" style="width: 40%" /><br>
-              <label>Qnt.de Devs Júniores Contratados</label>
-              <input type="number" min="1" class="form-control md-3" id="devs_jrs_contratatados"><br>
-              <label>Carga Horária Semanal Dev Júnior</label>
-              <input class="form-control md-3" id="carga_junior"  data-mask="00:00"><br>
-              <label>Salário Dev Júnior</label>
-              <input class="form-control md-3" id="salario_junior"  data-mask="R$ 00000.00">
-
+          <div class="row">
+            <div class="col-md-1">
             </div>
-            <div class="col">
-              <img src="img/senior.svg" alt="" style="width: 31.5%;" /><br>
-              <label>Qnt.de Devs Sêniores para Onboarding</label>
-              <input type="number" min="1" class="form-control" id="qnt_dev_sr"><br>
-              <label>Carga Horária Semanal Dedicada ao Onboarding</label>
-
-              <input  class="form-control" id="carga_senior" data-mask="00:00" value="10:00"><br>
-              <label>Salário Dev Sênior</label>
-              <input  class="form-control" id="salario_senior" data-mask="R$ 000000.00" ><br>
+            <div class="col-md-3">
+              <label>Devs Júniores</label>
+              <input type="number" min="1" class="form-control input" id="qnt_dev_jr" value="1"
+                style="background-color: transparent; border: 0;"><br>
+            </div>
+            <div class="col-md-3">
+              <br>
+              <button class="btn btn-default btn-circle input" style="background-color: #5533ff;"
+                onclick="document.querySelector('#qnt_dev_jr').stepUp()">+</button>
+              <button class="btn btn-default btn-circle input" style="background-color: #5533ff; margin-left: 2vw;"
+                onclick="document.querySelector('#qnt_dev_jr').stepDown()">-</button>
+            </div>
+            <div class="col-md-5">
+              <label>Salário Dev Júnior</label><br>
+              <input class="input" id="salario_junior" data-mask="R$ 00000.00" value="R$ 2000"
+                style="background-color: transparent; border: 0;">
             </div>
           </div>
-
-          <label>Carga Horária Semanal Dev Sênior</label>
-          <input  class="form-control md-6" id="carga_senior_total" data-mask="00:00" value="40:00"><br>
-
-
-          <div class="button pt-30">
-            <a class="btn" style="background-color: #5533ff;" id="button">Calcular!</a>
+          <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-3">
+              <label>Devs Sêniores para Onboarding</label>
+              <input type="number" min="1" class="form-control input" id="qnt_dev_sr" value="1"
+                style="background-color: transparent; border: 0;"><br>
+            </div>
+            <div class="col-md-3">
+              <br>
+              <button class="btn btn-default btn-circle input" style="background-color: #5533ff;"
+                onclick="document.querySelector('#qnt_dev_sr').stepUp()">+</button>
+              <button class="btn btn-default btn-circle input" style="background-color: #5533ff; margin-left: 2vw;"
+                onclick="document.querySelector('#qnt_dev_sr').stepDown()">-</button>
+            </div>
+            <div class="col-md-5">
+              <label>Carga Horária Semanal Dedicada ao Onboarding</label><br>
+              <input class="input" id="carga_senior" data-mask="00:00" value="10:00"
+                style="background-color: transparent; border: 0;"><br><br>
+            </div>
           </div>
-          <div class="area">
-
-          </div>
-          </form>
         </div>
       </div>
+    </div>
 
-
-          <!-- End Fetatures -->
-        </div>
-        <!-- End Col -->
+    <div class="row" style="margin-right: 5vw;">
+      <div class="col-md-2">
       </div>
-      <!-- End Row -->
+      <div class="col-md-3">
+        <label>Salário Dev Sênior</label><br>
+        <input class="input" id="salario_senior" data-mask="R$ 00000.00" value="R$ 2000"
+          style="background-color: transparent; border: 0;">
+      </div>
+      <div class="col-md-2">
+      </div>
+      <div class="col-md-5">
+        <label>Carga Horária Semanal Dev Sênior</label><br>
+        <input class="md-6 input" id="carga_senior_total" data-mask="00:00" value="40:00"
+          style="background-color: transparent; border: 0;"><br><br>
+      </div>
+      
+    </div>
+
+    </div>
+    </div>
+
+    <div class="col-md-6" style="margin-left: 20vw;">
+      <center>
+        <img src="img/senior.svg" alt="" style="width: 35%; margin-top: 5vh; margin-bottom: 5vh;" /><br>
+      </center>
+      <h2>Seu retorno sobre investimento é de: </h2>
+      <div class="col-6 area">
+      </div>
+    </div>
+
+
+    </div>
+    </div>
+
+
+    <!-- End Fetatures -->
+    </div>
+    <!-- End Col -->
+    </div>
+    <!-- End Row -->
     </div>
   </section>
   <!-- Cool Fetatures Section End -->
