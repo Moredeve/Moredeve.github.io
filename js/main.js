@@ -159,24 +159,57 @@ function calc(){
   var carga_senior_total = $("#carga_senior_total").val();
   console.log(carga_senior_total)
  
-  var senior_time_split = carga_senior.split(':');
-  var min_onboarding = ((Number(senior_time_split[0]) * 60) + Number(senior_time_split[1])) / 300
+    var senior_time_split = carga_senior.split(':');
+    carga_senior_total = carga_senior_total.split(':');
 
-  carga_senior_total = carga_senior_total.split(':')
-  carga_senior_total = ((Number(carga_senior_total[0]) * 60) + Number(carga_senior_total[1])) / 300
+    console.log("1: " + parseInt(senior_time_split[1]))
+    console.log("2: " + parseInt(carga_senior_total[1]))
 
-  var custo_senior_min = (parseInt(salario_senior.split(' ')[1])) / (20 * carga_senior_total * 60)
-  var custo_final_senior = 9 * 20 * (min_onboarding*60) * custo_senior_min * parseInt(qnt_dev_sr)
-  var custo_final_prod = salario_junior.split(' ')[1] * 0.7 * 8 * parseInt(qnt_dev_jr);
-  var custo_final_bad = (salario_junior.split(' ')[1] * 13 * 0.3) / 4
-  var custo_ano = (custo_final_senior + custo_final_bad + custo_final_prod) / 4000
+    if(! ((parseInt(senior_time_split[1]) >= 60)|| (parseInt(carga_senior_total[1])>= 60))){
 
-  console.log("custo total: " + custo_ano)
+      var min_onboarding = ((Number(senior_time_split[0]) * 60) + Number(senior_time_split[1])) / 300
+      carga_senior_total = ((Number(carga_senior_total[0]) * 60) + Number(carga_senior_total[1])) / 300
+  
+      var custo_senior_min = (parseInt(salario_senior.split(' ')[1])) / (20 * carga_senior_total * 60)
+      var custo_final_senior = 9 * 20 * (min_onboarding*60) * custo_senior_min * parseInt(qnt_dev_sr)
+      var custo_final_prod = salario_junior.split(' ')[1] * 0.7 * 8 * parseInt(qnt_dev_jr);
+      var custo_final_bad = (salario_junior.split(' ')[1] * 13 * 0.3) / 4
+      var custo_ano = (custo_final_senior + custo_final_bad + custo_final_prod) / 4000
+  
+      console.log("custo total: " + custo_ano)
+  
+      if(min_onboarding >= carga_senior_total) {
+        $('#result').remove();
+        var arr = "<p id='result' style='text-size: 5 vw;'> <strong>Oops, a carga horária total do sênior não pode ser inferior ou igual ao tempo dedicado ao onboarding</strong></p>";
+      }
 
-  $('#result').remove();
+      else if(isNaN(custo_ano)) {
+        $('#result').remove();
+        var arr = "<p id='result' style='text-size: 5 vw;'> <strong>Eita, verifique as informações de horário ⏱⏱⏱<br> Padrão: Hora:Minuto</strong></p>";
+      }
+  
+      else if(custo_ano >= 10000) {
+        $('#result').remove();
+        var arr = "<p id='result' style='text-size: 5 vw;'> <strong>Oops, tem certeza que está preenchendo certo suas informações? 😅</strong></p>";
+      }
+      else{
+        $('#result').remove();
+        var arr = "<div  id='result'><h1> <strong>" + round(custo_ano,2) + " x </strong></h1>";
+        arr += "<br><p>Valores considerados para estimativa têm como base o estudo de caso <i>The True Cost of a Bad Hire</i> e consiste em três pilares:</i> </p>"
+        arr += "<br><center><ul class='list-group col-md-3'><li class='list-group-item'>Custo do Processo de Onboarding Tradicional</li><li class='list-group-item'>Ganho de Performance com um processo de Onboarding bem sucedido</li><li class='list-group-item'>Custos do processo de Contratação</li></ul></center>"
+        arr += "<br><br><h3 id='result'> <strong> Quer saber mais?<br><br></strong></h3>";
+        arr += "<a class='btn btn-rounded input' style='background-color: #5533ff;' href='https://wa.me/5548984654553?text=Olá, estou muito interessado no produto da MoreDeve!'>ENTRE EM CONTATO!</a></div>"
+      }
+  
+      $('.area').append(arr)
+    }
+    else{
+      $('#result').remove();
+      var arr = "<p id='result' style='text-size: 5 vw;'> <strong>Oops, não utrapasse de 59 min ⏱⏱⏱ <br>Padrão: Hora:Minuto</strong></p>";
+      $('.area').append(arr)
+    }
+  
 
-  var arr = "<h1 id='result'> <strong>" + round(custo_ano,2) + " x </strong></h1>";
-  $('.area').append(arr)
 };
 
 $(".input").on('input', function(){
