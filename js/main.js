@@ -194,7 +194,7 @@ function calc(){
       }
       else{
         $('#result').remove();
-        var arr = "<div  id='result'><h1> <strong>" + round(custo_ano,2) + " x </strong></h1>";
+        var arr = "<div  id='result'><h1> <strong>" + round(custo_ano,2) + " X ao ano</strong></h1>";
         arr += "<br><p>Valores considerados para estimativa têm como base o estudo de caso <i>The True Cost of a Bad Hire</i> e consiste em três pilares:</i> </p>"
         arr += "<br><center><ul class='list-group col-md-3'><li class='list-group-item'>Custo do Processo de Onboarding Tradicional<br>R$ "
         arr +=  custo_final_senior +"</li><li class='list-group-item'>Ganho de Performance com um processo de Onboarding bem sucedido<br>R$ "
