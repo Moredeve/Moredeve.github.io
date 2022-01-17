@@ -185,7 +185,7 @@ function calc(){
 
       else if(isNaN(custo_ano)) {
         $('#result').remove();
-        var arr = "<p id='result' style='text-size: 5 vw;'> <strong>Eita, verifique as informações de horário ⏱⏱⏱<br> Padrão: Hora:Minuto</strong></p>";
+        var arr = "<p id='result' style='text-size: 5 vw;'> <strong>Oops, tem certeza que está preenchendo certo suas informações? 😅</strong></p>";
       }
   
       else if(custo_ano >= 10000) {
