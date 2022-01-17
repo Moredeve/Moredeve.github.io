@@ -196,7 +196,10 @@ function calc(){
         $('#result').remove();
         var arr = "<div  id='result'><h1> <strong>" + round(custo_ano,2) + " x </strong></h1>";
         arr += "<br><p>Valores considerados para estimativa têm como base o estudo de caso <i>The True Cost of a Bad Hire</i> e consiste em três pilares:</i> </p>"
-        arr += "<br><center><ul class='list-group col-md-3'><li class='list-group-item'>Custo do Processo de Onboarding Tradicional</li><li class='list-group-item'>Ganho de Performance com um processo de Onboarding bem sucedido</li><li class='list-group-item'>Custos do processo de Contratação</li></ul></center>"
+        arr += "<br><center><ul class='list-group col-md-3'><li class='list-group-item'>Custo do Processo de Onboarding Tradicional<br>R$ "
+        arr +=  custo_final_senior +"</li><li class='list-group-item'>Ganho de Performance com um processo de Onboarding bem sucedido<br>R$ "
+        arr += custo_final_prod +"</li><li class='list-group-item'>Custos do processo de Contratação<br>R$ "
+        arr += custo_final_bad +"</li></ul></center>"
         arr += "<br><br><h3 id='result'> <strong> Quer saber mais?<br><br></strong></h3>";
         arr += "<a class='btn btn-rounded input' style='background-color: #5533ff;' href='https://wa.me/5548984654553?text=Olá, estou muito interessado no produto da MoreDeve!'>ENTRE EM CONTATO!</a></div>"
       }
